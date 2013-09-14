@@ -4,10 +4,10 @@ Copy file 'testing_dgetrf-ex1.cpp' in the 'testing' directory and try
 
 This produces compilation errors.
 
-How to modify the ?? part of the code so that we perform a LU factorization
-of h_A with leading dimention lda where the matrix size is M x N, and the 
-resulting pivots are in stored in the 'pivots' array?
+How to modify the ?? part of the code so that we perform an LU factorization
+of h_A with leading dimention lda, where the matrix size is M x N, and the 
+resulting pivots are stored in the 'pivots' array?
 
-Run the example with different options, and in particular options that
-print error estimates, e.g.,
+Modify the code and run the example with different options, and in particular 
+options that print error estimates, e.g.,
 > aprun ./testing_dgetrf-ex1 -l -c
