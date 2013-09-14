@@ -1,0 +1,17 @@
+Go to the 'src'	directory and
+mv dgegqr_gpu.cpp dgegqr_gpu.cpp.bak
+Next, copy file 'dgegqr_gpu-ex4.cpp' in dgegqr_gpu.cpp and try to compile
+> make
+...
+
+This produces compilation errors.
+
+How to modify the ?? part of the code so that this rourine correctly
+represents the algorithm given in the presentation slides about
+orthogonalizes a group of vectors - in this case the m x n vectors in
+dA with leading dimension ldda.
+
+Modify the code and in order to make sure the changes are correct, run the
+example with options that print error estimates, e.g.,
+> aprun testing_dgegqr_gpu -m 100000 -n 128 -c -l
+
