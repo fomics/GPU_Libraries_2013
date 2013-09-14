@@ -1,0 +1,16 @@
+Copy file 'testing_dgesv-ex2.cpp' in the 'testing' directory and try
+> make testing_dgesv-ex2
+...
+
+This produces compilation errors.
+
+How to modify the ?? part of the code so that we solve the 
+                 h_LU x = h_X
+problem. Matrix h_LU has leading dimension lda and is of size N x N.
+The right-hand sides are 'nrhs' and are sored in h_X with leading dim ldb
+Put the pivots in ipiv.
+
+Modify the code and in order to make sure the changes are correct, run the example 
+with options that print error estimates, e.g.,
+> aprun ./testing_dgesv-ex2 -l -c --nrhs 5
+
