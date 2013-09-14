@@ -1,0 +1,13 @@
+Copy file 'testing_dsyevd-ex3.cpp' in the 'testing' directory and try
+> make testing_dsyevd-ex3
+...
+
+This produces compilation errors.
+
+How to modify the ?? part of the code so that we find all eigenvalues
+and eigenvectors of h_R with leading dimension lda, where the matrix
+is of size size N x N.
+
+Modify the code and in order to make sure the changes are correct, run the
+example with options that print error estimates, e.g.,
+> aprun ./testing_dsyevd-ex3 -l -c
